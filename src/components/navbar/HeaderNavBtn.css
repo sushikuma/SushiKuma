@@ -1,0 +1,38 @@
+#headerNavBtn {
+    font-family: "Courier New", Courier, monospace;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    width: auto;
+    min-width: 100px;
+    color: rgba(211,211,211,0);
+    height: 50px;
+    font-size: 30px;
+    transition: 0.4s;
+    cursor: pointer;
+    padding: 0px;
+    margin: 0px;
+}
+  
+#headerNavBtn.active {
+    font-size: 10px;
+    color: rgba(211,211,211,1);
+}
+
+#headerNavBtn.clicked,
+#headerNavBtn:hover {
+    font-size: 20px;
+    color: rgba(191,26,4,1);
+}
+
+@media only screen and (max-width: 550px) {
+    #headerNavBtn {
+        font-size: 15px;
+        min-width: 10px;
+        width: auto;
+    }
+
+    #headerNavBtn.active {
+        width: auto;
+    }
+}
+  

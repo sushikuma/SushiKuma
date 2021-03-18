@@ -1,0 +1,39 @@
+#stores {
+    margin-top: 130px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    height: calc(95vh - 300px);
+    overflow: auto;
+}
+
+.store {
+    color: white;
+    width: 50vw;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.store img{
+    width: 30vw;
+    height: auto;
+}
+
+.text-box {
+    height: auto;
+}
+
+@media only screen and (max-width: 550px) {
+    #stores {
+        flex-flow: row wrap;
+        height: calc(95vh - 120px);
+        margin-top: 80px;
+    }
+    
+    .store {
+        width: 90vw;
+    }
+    
+    .store img{
+        width: 80vw;
+    }
+}

@@ -1,0 +1,42 @@
+#navBtn {
+  font-family: "Courier New", Courier, monospace;
+  background-color: rgba(0,0,0,0);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid #ddd;
+  width: 20vw;
+  min-width: 400px;
+  color: rgba(211,211,211,1);
+  height: 50px;
+  font-size: 30px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+#navBtn.active {
+  color: rgba(211,211,211,0);
+  width: 30vw;
+}
+
+#navBtn:hover {
+  border-bottom: 3px solid #bf1a04;
+  color: rgba(191,26,4,1);
+}
+
+#navBtn.clicked {
+  border-bottom: 3px solid #bf1a04;
+  color: rgba(191,26,4,0);
+}
+
+@media only screen and (max-width: 550px) {
+  #navBtn {
+    font-size: 15px;
+    min-width: 50px;
+    width: 27vw;
+  }
+
+  #navBtn.active {
+    width: 25vw;
+  }
+}
