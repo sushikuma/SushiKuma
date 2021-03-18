@@ -5,7 +5,7 @@ const FindUs = ( props ) => (
   <div id='stores'>
     <div className="store">
       <a href="https://www.google.com/maps/place/Sushi+Kuma/@38.6517115,-121.0703106,17z/data=!3m1!4b1!4m5!3m4!1s0x809afab82e878f91:0x39b030390e0a9828!8m2!3d38.6517073!4d-121.0681219">
-        <img src="http://www.sushikuma.net/asset/kuma/images/edh.png" alt="location">
+        <img src="images/edh.png" alt="location">
         </img>
       </a>
       <div className="text-box">
@@ -21,7 +21,7 @@ const FindUs = ( props ) => (
 
     <div className="store">
       <a href="https://www.google.com/maps/place/Sushi+Kuma/@38.7897955,-121.2869385,17z/data=!3m2!4b1!5s0x809b21ed708291f1:0xad0170a75c63e650!4m5!3m4!1s0x809b21f2a4f76fdf:0xad13893b21ea4548!8m2!3d38.7897913!4d-121.2847498">
-        <img src="http://www.sushikuma.net/asset/kuma/images/roseville.png" alt="location"></img>
+        <img src="images/roseville.png" alt="location"></img>
       </a>
       <div className="text-box">
         <h2>Roseville</h2>
