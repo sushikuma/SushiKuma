@@ -32,7 +32,14 @@
     }
 
     #headerNavBtn.active {
+        font-size: 10px;
         width: auto;
     }
+
+    #headerNavBtn.clicked,
+    #headerNavBtn:hover {
+    font-size: 18px;
+    color: rgba(191,26,4,1);
+}
 }
   

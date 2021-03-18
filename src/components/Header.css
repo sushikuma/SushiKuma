@@ -1,20 +1,20 @@
-#header-logo.active {
-  height: 80px;
-}
-
 #header-logo {
   position: fixed;
-  left: -10vw;
-  z-index: 2;
+  width: 100vw;
+  min-width: 1280px;
   padding-top: 10vh;
-  margin-left: 50vw;
+  padding-left: max(390px, calc((var(--vw, 1vw) * 50) - 250px));
+  z-index: 0;
   transition: 0.4s;
+  text-align: left;
 }
 
 #header-logo.active {
-  left: 0px;
-  padding-top: 0.5vh;
-  padding-left: 100px;
+  height: 130px;
+  width: 100vw;
+  min-width: 0px;
+  padding-top: 10px;
+  padding-left: 30px;
   margin-left: 1vw;
 }
 
@@ -31,7 +31,7 @@
 
 @media only screen and (max-width: 550px) {
   #header-logo {
-    left: -100px;
+    padding-left: calc((var(--vw, 1vw) * 50) - 100px);
   }
 
   #header-logo.active {
@@ -44,8 +44,7 @@
   }
 
   #logo-img.active {
-    width: 80px;
-    height: 80px;
-    min-width: 80px;
+    width: 70px;
+    height: 70px;
   }
 }

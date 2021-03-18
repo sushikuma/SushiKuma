@@ -3,12 +3,9 @@
   display: flex;
   margin-top: 30px;
   width: 100vw;
+  height: 0px;
   min-width: 1280px;
   justify-content: flex-end;
-}
-
-.header-nav.active {
-  
 }
 
 .main-nav {

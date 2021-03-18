@@ -6,13 +6,13 @@ const Menu = ( props ) => (
   <div className="pages">
     <div className="location-page">
       <div className="location-selector" id="menu-page/locations">
-        <Link id="menu-selector-btn" to='/menu/eldoradohills'>
+        <Link id="menu-selector-btn" to='/eldoradohills'>
           <button>
             El Dorado Hills
           </button>
         </Link>
 
-        <Link id="menu-selector-btn" to='/menu/roseville'>
+        <Link id="menu-selector-btn" to='/roseville'>
           <button>
             Roseville
           </button>

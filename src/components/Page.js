@@ -18,8 +18,8 @@ const Page = ( props ) => (
       <Route path='/menu' exact component={Menu} />
       <Route path='/findus' component={FindUs} />
       <Route path='/reservation' component={Reservation} />
-      <Route path='/menu/eldoradohills' component={EdhMenu} />
-      <Route path='/menu/roseville' component={RosevilleMenu} />
+      <Route path='/eldoradohills' component={EdhMenu} />
+      <Route path='/roseville' component={RosevilleMenu} />
     </div>
   </Switch>
 );
