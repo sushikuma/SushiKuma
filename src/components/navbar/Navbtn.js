@@ -23,6 +23,7 @@ const Navbtn = ( props ) => {
     }
 
     let address = window.location.pathname.slice(1);
+    if (address == 'roseville' || address == 'eldoradohills') address = 'menu';
     if (address == props.value.toLowerCase().replace(/ /g, '')) {
       clickHandler(props.onClick, setClicked, props.btnClicked, props.value);
     }
