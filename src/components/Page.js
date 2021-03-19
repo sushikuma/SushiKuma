@@ -4,8 +4,8 @@ import Home from './pages/Home';
 import Menu from './pages/Menu';
 import FindUs from './pages/FindUs';
 import Reservation from './pages/Reservation';
-import EdhMenu from './pages/eldorado-menu';
-import RosevilleMenu from './pages/roseville-menu';
+import EdhMenu from './pages/EldoradoMenu';
+import RosevilleMenu from './pages/RosevilleMenu';
 import {
   Switch,
   Route

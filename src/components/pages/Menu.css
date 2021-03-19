@@ -1,0 +1,8 @@
+.warning {
+    font-family: "Courier New", Courier, monospace;
+    color: white;
+    border: 1px dashed white;
+    margin: auto;
+    max-width: 1250px;
+    padding: 0px;
+}
