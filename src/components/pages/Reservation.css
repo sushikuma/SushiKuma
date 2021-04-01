@@ -18,10 +18,6 @@
     margin: 20px auto;
 }
 
-.textbox-container label {
-    margin-top: 10px;
-}
-
 .textbox-container p {
     font-size: 14px;
 }
@@ -29,7 +25,6 @@
 input[type=text], input[type=email], select {
     width: 100%;
     padding: 12px 20px;
-    margin: 8px 8px;
     font-family: "Courier New", Courier, monospace;
     display: inline-block;
     border: 1px solid #ccc;
@@ -54,7 +49,6 @@ input[type=submit] {
 input[type=date] {
     width: 100%;
     padding: 12px 20px;
-    margin: 8px 8px;
     font-family: "Courier New", Courier, monospace;
     display: inline-block;
     border: 1px solid #ccc;
@@ -65,7 +59,6 @@ input[type=date] {
 input[type=number] {
     width: 100%;
     padding: 12px 20px;
-    margin: 8px 8px;
     font-family: "Courier New", Courier, monospace;
     display: inline-block;
     border: 1px solid #ccc;
@@ -81,10 +74,6 @@ input[type=submit]:hover {
     background-color: #45a049;
 }
 
-.contact-form label {
-    margin: 8px;
-}
-
 .recaptcha {
     width: 304px;
     margin: 10px auto;
@@ -93,7 +82,7 @@ input[type=submit]:hover {
 
 @media only screen and (max-width: 550px) {
     .contact-form {
-        height: calc(90vh - 150px);
+        height: calc(90vh - 200px);
         overflow: auto;
         scrollbar-width: none;
     }
