@@ -9,7 +9,6 @@ const Reservation = ( props ) => {
   function sendEmail(e) {
     e.preventDefault();
   
-    //service_tp2by9o
     emailjs.sendForm('service_tp2by9o', 'template_4xt931d', e.target, 'user_W7uVP88b4bDlr9IVxkI6O').then((result) => {
         console.log(result.text);
       }, (error) => {
