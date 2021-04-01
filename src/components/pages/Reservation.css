@@ -1,6 +1,100 @@
-#reservation-container{
-    padding-top: 15vh;
+#reservation-container {
+    margin-top: 15vh;
     color: white;
     font-family: "Courier New", Courier, monospace;
     font-size: 2vh;
+    border-radius: 5px;
+    /* background-color: #f2f2f2; */
+}
+
+.contact-form {
+    height: calc(100vh - 400px);
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+.textbox-container {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.textbox-container label {
+    margin-top: 10px;
+}
+
+.textbox-container p {
+    font-size: 14px;
+}
+
+input[type=text], input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 8px;
+    font-family: "Courier New", Courier, monospace;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+input[type=submit] {
+    display: none;
+    width: auto;
+    max-width: 1000px;
+    background-color: #ccc;
+    font-family: "Courier New", Courier, monospace;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=date] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 8px;
+    font-family: "Courier New", Courier, monospace;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 8px;
+    font-family: "Courier New", Courier, monospace;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit].active {
+    display: initial;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.contact-form label {
+    margin: 8px;
+}
+
+.recaptcha {
+    width: 304px;
+    margin: 10px auto;
+}
+
+
+@media only screen and (max-width: 550px) {
+    .contact-form {
+        height: calc(90vh - 150px);
+        overflow: auto;
+        scrollbar-width: none;
+    }
 }

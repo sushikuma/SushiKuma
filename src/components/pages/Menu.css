@@ -6,3 +6,13 @@
     max-width: 1250px;
     padding: 0px;
 }
+
+.warning p {
+    margin: 15px 15px;
+}
+
+@media only screen and (max-width: 550px) {
+    .warning {
+        margin: 8px;
+    }
+}

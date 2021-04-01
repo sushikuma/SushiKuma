@@ -24,7 +24,9 @@ const RosevilleMenu = () => (
   </div>
 
   <div className='menu-div'>
-    <p>*Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness.<br />*Our menu and prices are subject to change.<br />*18% gratuity will be added for parties of six or more.</p>
+    <div className='warning'>
+      <p>*Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness.<br />*Our menu and prices are subject to change.<br />*18% gratuity will be added for parties of six or more.</p>
+    </div>
     <Category name='Appetizer'><App/></Category>
     <Category name='Nigiri'><Nigi/></Category>
     <Category name='Street Food'><Street/></Category>
