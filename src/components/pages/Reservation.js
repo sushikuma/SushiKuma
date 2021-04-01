@@ -54,7 +54,7 @@ const Reservation = ( props ) => {
         <div className='textbox-container'>
           <label>Location</label>
           <select name="location" required>
-            <option selected disabled hidden value=''>-- select a location --</option>
+            <option defaultValue value=''>-- select a location --</option>
             <option value="El Dorado Hills">El Dorado Hills</option>
             <option value="Roseville">Roseville</option>
           </select>
@@ -66,7 +66,7 @@ const Reservation = ( props ) => {
         <div className='textbox-container'>
           <label>Time</label>
           <select name="time" required>
-            <option selected disabled hidden value=''>-- select time --</option>
+            <option defaultValue value=''>-- select time --</option>
             <option value="12:00">12:00 PM</option>
             <option value="12:30">12:30 PM</option>
             <option value="1:00">1:00 PM</option>
