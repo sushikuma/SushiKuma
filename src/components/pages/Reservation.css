@@ -87,7 +87,7 @@ input[type=submit]:hover {
     }
 
     .contact-form {
-        height: calc(100vh - 200px);
+        height: calc(100vh - 240px);
         overflow: auto;
         scrollbar-width: none;
     }
