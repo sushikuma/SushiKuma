@@ -16,6 +16,7 @@
 .textbox-container {
     max-width: 500px;
     margin: 20px auto;
+    padding: 0 8px;
 }
 
 .textbox-container p {
@@ -76,7 +77,7 @@ input[type=submit]:hover {
 
 .recaptcha {
     width: 304px;
-    margin: 10px auto;
+    margin: auto;
 }
 
 
