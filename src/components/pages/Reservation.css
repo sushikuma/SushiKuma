@@ -82,8 +82,12 @@ input[type=submit]:hover {
 
 
 @media only screen and (max-width: 550px) {
+    #reservation-container {
+        margin-top: 90px;
+    }
+
     .contact-form {
-        height: calc(90vh - 200px);
+        height: calc(100vh - 200px);
         overflow: auto;
         scrollbar-width: none;
     }

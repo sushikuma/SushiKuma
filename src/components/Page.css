@@ -8,7 +8,7 @@ h1 {
 }
 
 #title {
-  padding-top: 100px;
+  margin-top: 100px;
   color: white;
   font-family: "Courier New", Courier, monospace;
   font-size: 3vh;
@@ -221,11 +221,11 @@ h1 {
 
   /* menu mobile version */
   #title {
-    padding-top: 90px;
+    margin-top: 90px;
   }
 
   .menu-div {
-    height: calc(90vh - 250px);
+    height: calc(100vh - 260px);
   }
 
   #main-nav {
