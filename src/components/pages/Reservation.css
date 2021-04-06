@@ -79,4 +79,10 @@ input[type=submit]:hover {
         overflow: auto;
         scrollbar-width: none;
     }
+
+    .contact-form p{
+        font-size: 14px;
+        width: auto;
+        margin: auto 8px;
+    }
 }
