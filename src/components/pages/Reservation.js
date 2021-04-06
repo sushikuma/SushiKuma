@@ -11,6 +11,7 @@ const Reservation = ( props ) => {
   
     emailjs.sendForm('service_tp2by9o', 'template_4xt931d', e.target, 'user_W7uVP88b4bDlr9IVxkI6O').then((result) => {
         console.log(result.text);
+        
       }, (error) => {
         console.log(error.text);
       });
@@ -42,6 +43,12 @@ const Reservation = ( props ) => {
 
       <form className="contact-form" onSubmit={sendEmail}>
         <input type="hidden" name="contact_number" />
+
+        <p>
+          -Please give us a call if your party is greater than 12<br />
+          -We're currently taking only parties of 6 or more. <br />
+          -All members of your party must be present to be seated.
+        </p>
         
         <div className='textbox-container'>
           <label>Name</label>
@@ -50,6 +57,10 @@ const Reservation = ( props ) => {
         <div className='textbox-container'>
           <label>Email</label>
           <input type="email" name="user_email" placeholder="Enter your email address" required />
+        </div>
+        <div className='textbox-container'>
+          <label>Phone Number</label>
+          <input type="tel" name="user_phone" placeholder="Enter your mobile number" required />
         </div>
         <div className='textbox-container'>
           <label>Location</label>
@@ -85,8 +96,7 @@ const Reservation = ( props ) => {
         </div>
         <div className='textbox-container'>
           <label>How many?</label>
-          <p>(Please give us a call if your party is greater than 12)</p>
-          <input type="number" name="number" min="1" max="12" required></input>
+          <input type="number" name="number" min="6" max="12" placeholder='6' required></input>
         </div>
 
 
