@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Category from '../menu-items/Category';
-import ReactDOMServer from 'react-dom/server';
 import { Link } from 'react-router-dom';
 
 import App from '../menu-items/Eldorado/Appetizer';
@@ -9,14 +8,32 @@ import Des from '../menu-items/Eldorado/Dessert';
 import Ent from '../menu-items/Eldorado/Entree';
 import Kid from '../menu-items/Eldorado/Kids';
 import Nigi from '../menu-items/Eldorado/Nigiri';
-import Rol from '../menu-items/Eldorado/Rolls';
+import Roll from '../menu-items/Eldorado/Rolls';
 import Side from '../menu-items/Eldorado/Sides';
 import Spe from '../menu-items/Eldorado/SpecialRolls';
 import Com from '../menu-items/Eldorado/SushiCombo';
 
 
 const EldoradoMenu = () => {
-  const [isCatActive, setCatActive] = useState('menu-content');
+  // categori name : page element
+  const cateDict = {
+    'Appetizer': <App />, 
+    'Nigiri': <Nigi />, 
+    'Entrée': <Ent />, 
+    "Kids' Menu": <Kid />, 
+    'Sushi & Sashimi Combo': <Com />, 
+    'Rolls': <Roll />, 
+    'Kuma Special Rolls': <Spe />, 
+    'Side': <Side />, 
+    'Alcoholic Beverage': <Bev />, 
+    'Beverage & Dessert': <Des />, 
+  }
+
+  const categories = [];
+
+  for (const [catName, page] of Object.entries(cateDict)) {
+    categories.push(<Category name={catName}>{page}</Category>);
+  }
 
   return (
     <>
@@ -30,16 +47,7 @@ const EldoradoMenu = () => {
         <div className='warning'>
           <p>*Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness.<br />*Our menu and prices are subject to change.<br />*18% gratuity will be added for parties of six or more.</p>
         </div>
-        <Category name='Appetizer'><App/></Category>
-        <Category name='Nigiri'><Nigi/></Category>
-        <Category name='Entrée'><Ent/></Category>
-        <Category name="Kids' Menu"><Kid/></Category>
-        <Category name='Sushi & Sashimi Combo'><Com/></Category>
-        <Category name='Rolls'><Rol/></Category>
-        <Category name='Kuma Special Rolls'><Spe/></Category>
-        <Category name='Side'><Side/></Category>
-        <Category name='Alcoholic Beverage'><Bev/></Category>
-        <Category name='Beverage & Dessert'><Des/></Category>
+        {categories}
       </div>
 
       <Link to='/menu'>

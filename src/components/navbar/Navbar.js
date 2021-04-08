@@ -11,6 +11,7 @@ const activeHandler = ( btn, logo ) => {
 const Navbar = ( props ) => {
   const [isBtnActive, setBtnActive] = useState(false);
   const [btnClicked, setBtnClicked] = useState([]);
+  const buttons = [];
 
   useEffect(() => {
     if ( !props.isLogoActive ) setBtnActive(isBtnActive => false);
@@ -18,6 +19,17 @@ const Navbar = ( props ) => {
       setBtnActive(true);
     }
   });
+
+  // for () {
+  //   buttons.push(
+  //     <HeaderNavBtn 
+  //       value={} 
+  //       isLogoActive={} 
+  //       btnActiveStatus={} 
+  //       setActiveDir
+        
+  //       );
+  // }
 
   return (
     <>

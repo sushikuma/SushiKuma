@@ -39,7 +39,11 @@ const Reservation = ( props ) => {
         <br /><br />
         El Dorado Hills: 916.939.6578
       </p> */}
-      <h2>Reservation</h2>
+      <div id='title'>
+        <h2>
+          Reservation
+        </h2>
+      </div>
 
       <form className="contact-form" onSubmit={sendEmail}>
         <input type="hidden" name="contact_number" />
@@ -99,6 +103,7 @@ const Reservation = ( props ) => {
           <input type="number" name="number" min="6" max="12" placeholder='6' required></input>
         </div>
 
+        <input className={isActive? 'active' : ''} type="submit" value="Send" />
 
         <div className='recaptcha'>
           <ReCAPTCHA 
@@ -106,8 +111,6 @@ const Reservation = ( props ) => {
             onChange={onChange} 
           />
         </div>
-
-        <input className={isActive? 'active' : ''} type="submit" value="Send" />
       </form>
 
 

@@ -8,11 +8,10 @@ h1 {
 }
 
 #title {
-  margin-top: 100px;
+  margin-top: 140px;
   color: white;
   font-family: "Courier New", Courier, monospace;
   font-size: 3vh;
-  margin-top: 0px;
 }
 
 .menu-div {
@@ -174,7 +173,7 @@ h1 {
 .item h4 {
   margin: 0;
   font-style: italic;
-  font-size: 2vh;
+  font-size: 25px;
   font-weight: normal;
   color: #ddd;
 }
@@ -271,6 +270,15 @@ h1 {
   .location-page {
     height: calc(var(--vh, 1vh) * 100);
   }
+
+  .item h4 {
+    font-size: 25px;
+  }
+
+  .item p {
+    font-size: 18px;
+  }
+
 
   .menu-page a {
     font-size: 1.5vh;
