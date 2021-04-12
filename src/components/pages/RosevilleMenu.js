@@ -14,13 +14,15 @@ import Roll from '../menu-items/Roseville/Rolls';
 import Side from '../menu-items/Roseville/Sides';
 import Spe from '../menu-items/Roseville/SpecialRolls';
 import Com from '../menu-items/Roseville/SushiCombo';
+import Ben from '../menu-items/Roseville/Bento';
 
 const RosevilleMenu = () => {
   // categori name : page element
   const cateDict = {
     'Appetizer': <App />, 
     'Nigiri': <Nigi />, 
-    'Street Food': <Street />, 
+    'Street Food': <Street />,
+    'Kuma Bento Box': <Ben />,  
     'Entrée': <Ent />, 
     "Kids' Menu": <Kid />, 
     'Sushi & Sashimi Combo': <Com />, 
