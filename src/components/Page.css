@@ -11,11 +11,11 @@ h1 {
   margin-top: 140px;
   color: white;
   font-family: "Courier New", Courier, monospace;
-  font-size: 3vh;
+  font-size: 35px;
 }
 
 .menu-div {
-  height: calc(100vh - 550px);
+  height: calc(100vh - 450px);
   overflow: auto;
   scrollbar-width: none;
 }
@@ -35,12 +35,12 @@ h1 {
 }
 
 #back-btn {
-  margin-top: 5vh;
+  margin-top: 30px;
   background: rgba(0,0,0,0);
   border: 2px solid white;
   color: white;
   border-radius: 5px;
-  font-size: 1.5vh;
+  font-size: 25px;
   font-family: "Courier New", Courier, monospace;
   transition: 0.4s;
   outline: none;
@@ -135,14 +135,23 @@ h1 {
   transition-duration: 1s;
 }
 
+.item-div {
+  background: #252525;
+  border: 2px solid #fff;
+  border-radius: 100px;
+  width: 70%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0px 30px 35px 30px;
+}
+
 .item-title {
-  min-width: 250px;
-  font-size: 2.5vh;
-  padding: 15px 0 15px 0;
+  font-size: 40px;
+  margin-top: 35px;
+  margin-bottom: 10px;
   font-weight: bold;
-  text-decoration: underline;
   text-decoration-style: solid;
-  border-top: 2px dotted #bf1a04;
   color: #ddd;
 }
 
@@ -150,24 +159,27 @@ h1 {
   display:flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  margin: 30px 0 0 0;
 }
 
 .bento-items {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  border: 1px solid #ddd;
 }
 
 .bento-items .item {
   margin: 5px 0;
   color: #ddd;
+  font-size: 20px;
 }
 
 .item {
-  margin: 5px 10px;
+  margin: 5px ;
+  max-width: 400px;
+  border-radius: 100px;
   flex: 1 1 400px;
+  background: #333;
+  padding: 15px 15px;
 }
 
 .item h4 {
@@ -181,20 +193,33 @@ h1 {
 .item p {
   font-size: 20px;
   color: #ddd;
+  margin: 0px;
 }
 
 #nigiri-content .item {
   flex: 1 1 200px;
 }
 
+.nigiri-warning {
+  color: #ddd;
+}
+
+.bento-description {
+  color: #ddd;
+  font-size: 20px;
+  margin: 10px;
+}
+
 .discount{
   margin-top: 20px;
   font-size: 50px;
+  color: #ddd;
 }
 
 .roll-extra {
   margin-top: 50px;
   padding: 0 50px 30px 50px;
+  color: #ddd;
 }
 
 .extras {
@@ -221,6 +246,7 @@ h1 {
   /* menu mobile version */
   #title {
     margin-top: 90px;
+    font-size: 25px;
   }
 
   .menu-div {
@@ -271,14 +297,33 @@ h1 {
     height: calc(var(--vh, 1vh) * 100);
   }
 
+  .item-div {
+    border-radius: 80px;
+    width: 90%;
+    padding: 0px 5px 35px 5px;
+    margin: auto;
+  }
+
+  .item-title {
+    font-size: 30px;
+  }
+
+  .item {
+    border-radius: 80px;
+
+  }
+
   .item h4 {
-    font-size: 25px;
+    font-size: 22px;
   }
 
   .item p {
-    font-size: 18px;
+    font-size: 15px;
   }
 
+  .discount {
+    font-size: 25px;
+  }
 
   .menu-page a {
     font-size: 1.5vh;
@@ -300,17 +345,8 @@ h1 {
     margin-bottom: 10px;
   }
 
-
-  /* Footer mobile*/
-
-  /* #footer-nav.active {
-    margin-top: calc((var(--vh, 1vh) * 100) - 80px);
-    height: 80px;
+  #back-btn {
+    font-size: 15px;
   }
 
-  #footer-nav button{
-    width: 25vw;
-    font-size: 15px;
-    padding: 0;
-  } */
 }

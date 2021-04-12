@@ -20,17 +20,6 @@ const Navbar = ( props ) => {
     }
   });
 
-  // for () {
-  //   buttons.push(
-  //     <HeaderNavBtn 
-  //       value={} 
-  //       isLogoActive={} 
-  //       btnActiveStatus={} 
-  //       setActiveDir
-        
-  //       );
-  // }
-
   return (
     <>
       {/* header navbar */}
