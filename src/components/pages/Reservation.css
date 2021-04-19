@@ -14,7 +14,7 @@
 
 .contact-form p{
     font-size: 18px;
-    border: 1px solid #fff;
+    border: 1px solid #ddd;
     width: 700px;
     margin: auto;
     padding: 15px;
@@ -36,6 +36,7 @@ input[type=text], input[type=email], input[type=tel], input[type=number], input[
     font-family: "Courier New", Courier, monospace;
     display: inline-block;
     border: 1px solid #ccc;
+    background-color: #f1f1f1;
     border-radius: 4px;
     box-sizing: border-box;
   }
@@ -44,7 +45,7 @@ input[type=submit] {
     display: none;
     width: auto;
     max-width: 1000px;
-    background-color: #ccc;
+    background-color: #f1f1f1;
     font-family: "Courier New", Courier, monospace;
     color: black;
     padding: 14px 20px;

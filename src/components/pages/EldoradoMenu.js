@@ -14,6 +14,7 @@ import Spe from '../menu-items/Eldorado/SpecialRolls';
 import Com from '../menu-items/Eldorado/SushiCombo';
 import Ben from '../menu-items/Eldorado/Bento';
 
+import Cart from '../cart/Cart';
 
 const EldoradoMenu = () => {
   // categori name : page element
@@ -52,6 +53,8 @@ const EldoradoMenu = () => {
         </div>
         {categories}
       </div>
+
+      {/* <Cart></Cart> */}
 
       <Link to='/menu'>
         <button id='back-btn'>Back</button>
