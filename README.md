@@ -1,2 +1,3 @@
 # Sushi-Kuma-React
-Sushi Kuma website built with react
+Sushi Kuma website built with react<br/>
+sushikuma.net
